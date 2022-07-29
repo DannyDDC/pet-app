@@ -1,0 +1,188 @@
+[v-cloak] {
+  display: none;
+}
+
+.app-title {
+  font-size: 0.8rem;
+}
+
+.content-wrapper {
+  position: relative;
+}
+
+.page-container {
+  padding: 30px;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+/* Loading*/
+.loading-container {
+  background: rgba(0, 0, 0, 0.1);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  z-index: 1;
+}
+
+.loading-animation {
+  padding-top: 20%;
+  display: inline-block;
+}
+
+.loading-animation:after {
+  content: ' ';
+  display: block;
+  border: 6px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 6px solid #d9d7d7;
+  width: 40px;
+  height: 40px;
+  animation: loading-animation 1.2s linear infinite;
+  }
+
+@keyframes loading-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*Action Sheet*/
+.control-sidebar {
+  overflow: auto;
+  width: 350px;
+}
+
+.control-sidebar:before {
+  width: 350px;
+}
+
+.action-sheet-content {
+  overflow: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 76px;
+  padding: 14px;
+}
+
+.action-sheet-buttons{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #ced4da;
+  overflow: hidden;
+  padding: 14px;
+}
+
+/*vue select error*/
+.is-invalid .vs__dropdown-toggle {
+  border-color: #dc3545;
+}
+
+/*Data Table*/
+.custom-data-table {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 5px;
+}
+
+.custom-data-table-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.custom-data-table-label {
+  padding: 2px 0 0;
+  font-size: 13px;
+  color: #adb3b8;
+}
+
+.custom-data-table-date {
+  color: #007bff;
+}
+
+.custom-invalid-feedback {
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
+
+.empty-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.empty-page-icon { 
+  width: 20%;
+  height: 20%;
+}
+
+.empty-page-message { 
+  color: rgba(0,0,0,.5);
+  font-weight: 600;
+}
+
+.custom-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 70px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+.grid-container-custom {
+  display: grid;
+  grid-template-columns: 150px 1fr 100px 20px;
+  column-gap: 20px;
+}
+
+.item-box {
+  display: flex;
+  align-items: flex-end;
+}
+
+.custom-error {
+  color: red;
+}
+
+.custom-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  color: #fff !important;
+}
+
+.user-nick {
+  justify-content: flex-end;
+}
