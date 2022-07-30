@@ -37,7 +37,7 @@
           </div>
 
           <div>            
-            <button type="submit" class="btn">Iniciar sesión</button>            
+            <button type="submit" class="custom-btn">Iniciar sesión</button>            
           </div>
              
         </div>

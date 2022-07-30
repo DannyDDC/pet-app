@@ -118,8 +118,7 @@
           </div>
 
           <div>
-            <button type="reset" class="btn">Limpiar</button>
-            <button type="submit" class="btn">Registrar</button>               
+            <button type="submit" class="custom-btn">Registrar</button>               
           </div>
              
         </div>

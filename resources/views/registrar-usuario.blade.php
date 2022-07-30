@@ -73,7 +73,7 @@
           </div>
 
           <div>
-            <button type="submit" class="btn">Registrar</button>               
+            <button class="custom-btn" type="submit" class="btn">Registrar</button>               
           </div>
              
         </div>

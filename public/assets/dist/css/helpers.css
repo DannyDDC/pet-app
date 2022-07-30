@@ -186,3 +186,12 @@
 .user-nick {
   justify-content: flex-end;
 }
+
+.custom-btn {
+  background-color: #4585b7;
+  color: #fff;
+  border: 1px solid #4585b7;
+  width: 20%;
+  height: 25px;
+  cursor: pointer;
+}

@@ -82,7 +82,7 @@
           </div>
 
           <div>
-            <button type="submit" class="btn">Enviar</button>               
+            <button class="custom-btn" type="submit" class="btn">Enviar</button>               
           </div>
              
         </div>
