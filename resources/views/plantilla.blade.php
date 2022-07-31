@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Pet App</title>
+<title>Donanimal</title>
 <meta charset="utf-8">
 <link rel="icon" href="{{ asset('public/assets/dist/images/favicon.ico') }}">
 <link rel="shortcut icon" href="{{ asset('public/assets/dist/images/favicon.ico') }}">

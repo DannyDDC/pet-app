@@ -8,7 +8,7 @@
     <div class="grid_12">
       <h2>Contactos</h2>
     </div>
-    <div class="grid_12">
+    <div v-if="canAddContact()" class="grid_12" v-cloak>
       <div class="custom-title">
         <div><a href="{{ url('/registrar-contacto') }}">Agregar un contacto >></a></div>
       </div>
@@ -81,6 +81,10 @@
           const tipos = tiposArray.map(o => o.id)        
 					return tipos.join(",");
 				},
+        canAddContact: function() {
+          const permissions = localStorage.permissions; 
+          return permissions.includes("agregar_contacto");
+				}
       }
     });
 </script>

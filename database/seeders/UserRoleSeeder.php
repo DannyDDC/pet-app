@@ -55,5 +55,23 @@ class UserRoleSeeder extends Seeder
           'updated_at' => Carbon::now()
         ]
       ]);
+
+      DB::table('permissions')->insert([
+        [
+          'id' =>  'agregar_contacto',
+          'name' => 'agregar contacto',
+          'created_at' => Carbon::now(),
+          'updated_at' => Carbon::now()
+        ]
+      ]);
+
+      DB::table('permission_role')->insert([
+        [
+          'permission_id' => 'agregar_contacto',
+          'role_id' =>  'ADMIN',
+          'created_at' => Carbon::now(),
+          'updated_at' => Carbon::now()
+        ]
+      ]);
     }
 }

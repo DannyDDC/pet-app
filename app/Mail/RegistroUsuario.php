@@ -29,7 +29,7 @@ class RegistroUsuario extends Mailable
      */
     public function build()
     {
-        return $this->from('jocdominguez@gmail.com', 'Pet app')
+        return $this->from('admin@gmail.com', 'Donanimal')
             ->subject('Notificación Prevención abandono animal')
             ->view('mails.user_create');
     }
