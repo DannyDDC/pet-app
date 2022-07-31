@@ -139,17 +139,24 @@
   font-weight: 600;
 }
 
-.custom-content {
-  position: absolute;
+.app-container {
+	position: absolute;
   display: flex;
   flex-direction: column;
-  top: 70px;
+  top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.app-name {
+  color: #f98d0d;
+  font-size: 15px;
 }
 
 .grid-container-custom {

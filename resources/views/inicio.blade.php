@@ -5,6 +5,25 @@
     <div v-if="loading" class="loading-container">
       <div class="loading-animation"></div>
     </div>
+    <div class="top_block">
+      <div class="slider-relative">
+        <div class="slider-block">
+          <div class="slider">
+            <ul class="items">
+              <li><img src="{{ asset('public/assets/dist/images/slide.jpg') }}">
+                <div class="banner">Ellos necesitan tu <span>ayuda</span> and <i>Cuidado</i>
+                </div>
+              </li>
+              <li><img src="{{ asset('public/assets/dist/images/slide1.jpg') }}">
+              <div class="banner">Ellos necesitan tu <span>ayuda</span> and <i>Cuidado</i>
+                </div>
+              </li>             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="grid_12">
       <h2>APP de Prevención de abandono Animal</h2>
     </div>
@@ -15,18 +34,17 @@
     </div>
     <div class="clear"></div>
     <div v-cloak>
-    <ul class="pets-grid" v-if="records.length > 0">
-      <li class="pet-box" v-for="(item, index) in records"> 
-          <div class="img-box">
-            <img v-bind:src="appUrl +'/storage/app/'+item.ruta_imagen" alt="" class="img_inner">
-          </div>          
-          <div class="extra_wrapper pad1">
-            <p class="col2"><a v-bind:href="appUrl+'/solicitar-mascota/'+item.id" >@{{ item.nombre | capitalize }}</a></p>
-          </div>
-       
-      </li>
-    </ul>
-  </div>
+      <ul class="pets-grid" v-if="records.length > 0">
+        <li class="pet-box" v-for="(item, index) in records"> 
+            <div class="img-box">
+              <img v-bind:src="appUrl +'/storage/app/'+item.ruta_imagen" alt="" class="img_inner">
+            </div>          
+            <div class="extra_wrapper pad1">
+              <p class="col2"><a v-bind:href="appUrl+'/solicitar-mascota/'+item.id" >@{{ item.nombre | capitalize }}</a></p>
+            </div>        
+        </li>
+      </ul>
+    </div><br/>
   </div>
 @endsection
 
@@ -72,6 +90,7 @@
       display:grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 8px;
+      row-gap: 8px;
     }
 
     .pet-box {
