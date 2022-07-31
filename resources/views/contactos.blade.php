@@ -82,7 +82,7 @@
 					return tipos.join(",");
 				},
         canAddContact: function() {
-          const permissions = localStorage.permissions; 
+          const permissions = localStorage.permissions || []; 
           return permissions.includes("agregar_contacto");
 				}
       }
